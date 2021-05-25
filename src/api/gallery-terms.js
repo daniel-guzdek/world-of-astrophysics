@@ -1,0 +1,22 @@
+export const terms = [
+  "Galaxy",
+  "Universe",
+  "Planet",
+  "Cosmos",
+  "Uran",
+  "Mars",
+  "Jupiter",
+  "Black hole",
+  "Solar system",
+  "Nebula",
+  "Saturn",
+  "Pluto",
+  "Andromeda",
+  "Venus",
+  "Planet Earth",
+  "Neptun",
+  "Astrophysiscs",
+  "Telescope",
+  "Astronomy",
+  "Milky Way"
+]

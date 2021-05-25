@@ -1,0 +1,27 @@
+@mixin main-title {
+  font-family: $secondaryFontFamily;
+  font-size: $titleFontSize;
+  color: $titleFontColor;
+  margin-top: $titleMarginTop;
+  margin-bottom: $titleMarginBottom;
+  text-align: center;
+}
+
+@mixin main-subtitle {
+  font-family: $secondaryFontFamily;
+  font-size: $subtitleFontSize;
+  color: $subtitleFontColor;
+  margin-top: $subtitleMarginTop;
+  margin-bottom: $subtitleMarginBottom;
+  text-align: center;
+}
+
+@mixin paragraph {
+  font-family: $secondaryFontFamily;
+  font-size: $paragraphFontSize;
+  color: $subtitleFontColor;
+  margin-top: $subtitleMarginTop;
+  margin-bottom: $subtitleMarginBottom;
+  text-align: start;
+}
+

@@ -1,0 +1,102 @@
+.calc-wrapper{
+  padding: 0 5%;
+  .return-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: $titleMarginTop;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    .return-icon {
+      font-size: 30px;
+      color: $titleFontColor;
+      margin-right: 20px;
+    }
+    .return-em {
+      font-family: $secondaryFontFamily;
+      font-size: $subtitleFontSize / 2;
+      text-align: center;
+    }
+  }
+  .calc-item__title {
+    margin-top: $titleMarginTop;
+    margin-bottom: $titleMarginBottom;
+    color: $titleFontColor;
+    font-size: $titleFontSize;
+    font-family: $secondaryFontFamily;
+    padding-top: 10px;
+    text-align: center;
+    @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+      font-size: 40px;
+    }
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) { 
+      font-size: 38px;
+    }
+  }
+  .calc-item__description {
+    margin-top: $subtitleMarginTop;
+    margin-bottom: $subtitleMarginBottom;
+    color: $subtitleFontColor;
+    font-size: 18px;
+    font-family: $secondaryFontFamily;
+    text-align: center;
+    @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+      font-size: 25px;
+    }
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) { 
+      font-size: 24px;
+    }
+  }
+  .calc-panel {
+    margin-top: $sectionSpaceTop;
+    margin-bottom: $sectionSpaceBottom;
+    .explanation-formulas {
+      padding: 10px;
+      @media (max-width: 768px) {
+      }
+      .chapter__title {
+        margin-top: $titleMarginTop;
+        margin-bottom: $titleMarginBottom;
+        color: $titleFontColor;
+        font-size: 24px;
+        font-family: $secondaryFontFamily;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 30px;
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+      .explanation {
+        @include paragraph;
+        line-height: 180%;
+        @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+          font-size: 25px;
+        }
+        @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) { 
+          font-size: 24px;
+        }
+      }
+      .formula {
+        &-big {
+          display: block;
+          margin: 10px auto;
+        }
+      }
+      .formula-magnitudo {
+        @media (max-width: 380px) {
+          width: 100%;
+        } 
+      }
+    }
+    .calculator-math {
+      padding: 10px;
+    }
+  }
+}

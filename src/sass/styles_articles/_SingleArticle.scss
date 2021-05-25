@@ -1,0 +1,60 @@
+.single-article {
+  padding: 0 5%;
+  margin-top: $sectionSpaceTop;
+  margin-bottom: $sectionSpaceBottom;
+  font-family: $secondaryFontFamily;
+  .return-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: $titleMarginTop;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    .return-icon {
+      font-size: 30px;
+      color: $titleFontColor;
+      margin-right: 20px;
+    }
+    .return-em {
+      font-family: $secondaryFontFamily;
+      font-size: $subtitleFontSize / 2;
+      text-align: center;
+    }
+  }
+  &__cathegory {
+    margin: 40px auto;
+    font-size: 20px;
+    color: $subtitleFontColor;
+    em {
+      color: $primaryFontColor;
+    }
+  }
+  &__title {
+    @include main-title;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: $primaryFontColor;
+  }
+  &__subtitle {
+    @include main-subtitle;
+    font-size: 22px;
+    margin-bottom: 40px; 
+  }
+  &__author {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+  }
+  &__content {
+    @include paragraph;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 170%;
+  }
+}

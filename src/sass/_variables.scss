@@ -1,0 +1,38 @@
+$primaryFontFamily: 'Orbitron', sans-serif;
+$secondaryFontFamily: 'Open Sans', sans-serif;
+// $thirdFontFamily: 'Quicksand', sans-serif;
+$primaryFontColor: cornflowerblue;
+$secondaryFontColor: rgb(58, 204, 204);
+$thirdFontColor: rgb(74, 11, 133);
+
+// titles 
+$titleMarginTop: 25px;
+$titleMarginBottom: 15px;
+$titleFontSize: 40px;
+$titleFontColor: rgb(66, 66, 66);
+
+// subtitles
+$subtitleMarginTop: 10px;
+$subtitleMarginBottom: 20px;
+$subtitleFontSize: 25px;
+$subtitleFontColor: rgb(66, 66, 66);
+
+// paragraphs
+$paragraphFontSize: 15px;
+$paragraphFontColor: rgb(66, 66, 66);
+$paragraphFontFamily: $secondaryFontFamily;
+
+// section spacing
+$sectionSpaceTop: 50px;
+$sectionSpaceBottom: 50px;
+$sectionSideSpace: 20px;
+
+// images
+$imageSpaceTop: 40px;
+$imageSpaceBottom: 40px;
+
+// media queries (max-width: 460px)
+$xsmallTitleFontSize: 30px;
+$xsmallSubtitleFontSize: 17px;
+$xsmallParagraphFontSize: 13px;
+

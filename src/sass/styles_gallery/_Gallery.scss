@@ -1,0 +1,166 @@
+.gallery {
+  width: 100%;
+  min-width: 250px;
+  min-height: calc(100vh - 80px);
+  font-family: $secondaryFontFamily;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .gallery__main-titles {
+    .gallery__title {
+      @include main-title;
+      @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+        font-size: 70px;
+        margin-bottom: 50px;
+      }
+      @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+        font-size: 60px;
+      }
+      @media (max-width: 460px) {
+        font-size: $xsmallTitleFontSize;
+      }
+    }
+    .gallery__subtitle {
+      @include main-subtitle;
+      @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+      @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+        font-size: 35px;
+      }
+      @media (max-width: 460px) {
+        font-size: $xsmallSubtitleFontSize;
+      }
+    }
+    .gallery__subtitle:nth-child(1) {
+      font-size: 16px;
+    }
+    .pixabay-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .pixabay-link {
+        display: block;
+        width: 150px;
+        margin-left: 40px;
+        transition: .4s;
+        @media (max-width: 460px) {
+          width: 100px;
+          margin-left: 25px;
+        }
+        &:hover {
+          transform: scale(1.2);
+        }
+        .pixabay-image {
+          width: 100%;
+        }
+      }
+    } 
+  }
+  .gallery__content-container {
+    min-width: 250px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+      margin: 40px auto;
+    }
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+      margin: 20px auto;
+    }
+    @media (max-width: 460px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    @media (max-width: 320px) {
+      padding: 10px 5%;
+    }
+    .gallery__form {
+      padding: 40px;
+      color: $paragraphFontColor;
+      &-group {
+        margin-bottom: 20px;
+        &:focus {
+          outline: 0;
+        }
+        .dropdown-label {
+          display: block;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .dropdown {
+          position: relative;
+          margin-top: 10px;
+          &__selected {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 0 20px 0 10px;
+            font-size: 14px;
+            border: 1px solid $paragraphFontColor;
+            position: relative;
+            cursor: pointer;
+            transition: box-shadow .3s ease;
+        
+            &::after {
+              top: calc(50% - 2px);
+              right: 10px;
+              border: solid transparent;
+              content: '';
+              height: 0;
+              width: 0;
+              position: absolute;
+              border-top-color: #000;
+              border-width: 4px;
+              margin-left: -4px;
+            }
+        
+            &:hover {
+              box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+      }
+      &-error {
+        font-size: 12px;
+        padding: 5px 0;
+        color: red;
+      }
+      .gallery__btn-submit {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: $primaryFontColor;
+        font-family: $secondaryFontFamily;
+        letter-spacing: 1.5px;
+        color: #fff;
+        border: 0;
+        border-radius: 4px;
+        outline: 0;
+        cursor: pointer;
+        transition: .4s;
+        @media (max-width: 460px) {
+          display: inline-flex;
+          width: 100%;
+          justify-content: center;
+        }
+        &:hover {
+          background-color: darken($color: $primaryFontColor, $amount: 20%);
+        }
+      }
+    }
+  }
+  .photo-error {
+    @include main-subtitle;
+    padding-left: 5%;
+    padding-right: 5%;
+    @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+      font-size: 40px;
+    }
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+      font-size: 35px;
+    }
+  }
+}

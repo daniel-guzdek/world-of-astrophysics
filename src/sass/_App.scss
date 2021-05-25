@@ -1,0 +1,17 @@
+.hero-container,
+.articles,
+.calculators,
+.calc-1,
+.calc-2,
+.calc-3,
+.gallery,
+.contact,
+.footer {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+}
+
+.footer {
+  align-items: stretch;
+  justify-content: flex-end;
+}
