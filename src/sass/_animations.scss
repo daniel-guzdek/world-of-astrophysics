@@ -1,3 +1,20 @@
+@keyframes preload-logo {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preload-loading-dots {
+  0% {}
+
+  to {
+   right: -100%;
+  }
+}
+
 @keyframes spin-logo {
   from {
     transform: rotate(0);

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './css/style.css';
+import Preloader from './components/components_preloader/Preloader';
 import Navbar from './components/components_navbar/Navbar';
 import Hero from './components/section_hero/Hero';
 import Articles from './components/section_articles/Articles';
@@ -36,6 +37,7 @@ function App() {
   return (
     <>
       <Router>
+        <Preloader />
         <Navbar />
         <Switch>
           <Route path="/" exact component={Hero} />
