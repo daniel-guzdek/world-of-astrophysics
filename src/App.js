@@ -41,11 +41,11 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Hero} />
-          <Route path="/articles" exact component={Articles} />
           <Route path="/calculators" exact component={Calculators} />
           <Route path="/calculators/calc_1" component={Calc1} />
           <Route path="/calculators/calc_2" component={Calc2} />
           <Route path="/calculators/calc_3" component={Calc3} />
+          <Route path="/articles" exact component={Articles} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/contact" component={Contact} />
           <Route path='/articles/article_id-2' component={Article_id_2} />

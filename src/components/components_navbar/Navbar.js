@@ -34,10 +34,10 @@ function Navbar() {
           </div>
           <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-menu__item">
-              <Link to='/articles' className="nav-menu__link text-link" onClick={closeMobileMenu}>Articles</Link>
+              <Link to='/calculators' className="nav-menu__link text-link" onClick={closeMobileMenu}>Calculators</Link>
             </li>
             <li className="nav-menu__item">
-              <Link to='/calculators' className="nav-menu__link text-link" onClick={closeMobileMenu}>Calculators</Link>
+              <Link to='/articles' className="nav-menu__link text-link" onClick={closeMobileMenu}>Articles</Link>
             </li>
             <li className="nav-menu__item">
               <Link to='/gallery' className="nav-menu__link text-link" onClick={closeMobileMenu}>Gallery</Link>
