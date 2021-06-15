@@ -4,9 +4,7 @@ function TimeAndDate() {
 
   // actual date
   const [dayName, setDayName] = useState(new Date().getDay());
-  const [dayNumber, setDayNumber] = useState(new Date().getDay());
-  const [monthNumber, setMonthNumber] = useState(new Date().getMonth());
-  const [yearNumber, setYearNumber] = useState(new Date().getFullYear());
+  const [date, setDate] = useState(new Date().toLocaleDateString());
 
   if(dayName === 1) {
     setDayName('Monday');
@@ -33,15 +31,13 @@ function TimeAndDate() {
   const getActualDate = () => {
     setInterval(()=> {
       setDayName(new Date().getDay());
-      setDayNumber(new Date().getDay());
-      setMonthNumber(new Date().getMonth());
-      setYearNumber(new Date().getFullYear());
+      setDate(new Date().toLocaleDateString());
     }, 1000);
   };
 
   useEffect(() => {
     getActualDate()
-  }, [dayName, dayNumber, monthNumber, yearNumber]);
+  }, [dayName, date]);
     
   // actual time
   const [houres, setHoures] = useState(new Date().getHours());
@@ -82,9 +78,7 @@ function TimeAndDate() {
       <div className="actual-date">
         <p className="actual-date__title">Actual date :</p>
         <p className="actual-date__day-name"><span className="date-spacing">{dayName},</span></p>
-        <p className="actual-date__dd"><span className="date-spacing">{dayNumber <10 ? `0${dayNumber}` : dayNumber}</span>-</p>
-        <p className="actual-date__mm"><span className="date-spacing">{monthNumber <10 ? `0${monthNumber}` : monthNumber}</span>-</p>
-        <p className="actual-date__yy"><span className="date-spacing">{yearNumber <10 ? `0${yearNumber}` : yearNumber}</span></p>
+        <p className="actual-date__dd-mm-yy">{date}</p>
       </div>
       <div className="actual-time">
         <p className="actual-time__title">Actual time :</p>
