@@ -67,8 +67,8 @@ function TimeAndDate() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       setInterval(() => {
-        setLatitude((position.coords.latitude).toFixed(2));
-        setLongitude((position.coords.longitude).toFixed(2));
+        setLatitude(((position.coords.latitude).toFixed(2)).replace('.', '°'));
+        setLongitude(((position.coords.longitude).toFixed(2)).replace('.', '°'));
       }, 1000);
     });
   }, [latitude, longitude])
@@ -87,8 +87,8 @@ function TimeAndDate() {
         <p className="actual-time__seconds time-info"><span className="dots">{seconds <10 ? `0${seconds}` : seconds}</span></p>
       </div>
       <div className="actual-longitude-latitude">
-        <div className="latitude__label-value">Your latitude: <span className="latitude__value">{latitude}°</span></div>
-        <div className="longitude__label-value">Your longitude: <span className="latitude__value">{longitude}°</span></div>
+        <div className="latitude__label-value">Your latitude: <span className="latitude__value">{latitude}'</span></div>
+        <div className="longitude__label-value">Your longitude: <span className="latitude__value">{longitude}'</span></div>
       </div>
     </div>
   )
