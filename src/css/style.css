@@ -896,7 +896,7 @@ input {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 }
 @media (max-width: 780px) {
   .calculators-wrapper .calculators-container .calculators-content {
