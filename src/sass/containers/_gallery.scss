@@ -1,3 +1,6 @@
+@import "../variables";
+@import "../mixins";
+
 .gallery-container {
   @include container;
   flex-direction: column;

@@ -1,3 +1,6 @@
+@import "../variables";
+@import "../mixins";
+
 .calculators-wrapper {
   position: relative;
   min-height: calc(150vh - 80px);

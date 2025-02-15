@@ -1,3 +1,6 @@
+@import "../variables";
+@import "../mixins";
+
 .submenu-link {
   display: flex;
   color: $primary-font-color;

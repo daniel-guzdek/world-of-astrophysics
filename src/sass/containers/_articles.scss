@@ -1,3 +1,6 @@
+@import "../variables";
+@import "../mixins";
+
 .articles-wrapper {
   display: flex;
   flex-direction: row;
