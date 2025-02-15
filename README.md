@@ -8,6 +8,8 @@ Features
 
 Demo
 
+Setup
+
 Getting Started
 
 Prerequisites
@@ -37,6 +39,13 @@ Real-Time Data: Integration of real-time astronomical data.
 
 Demo
 Live Demo
+
+## Setup
+
+After running the application locally, you need to add the appropriate values ​​in the .env file to be able to fetch images in Gallery.
+
+1. Copy `.env.example` content to `.env`
+2. Add your own API keys and URLs
 
 ## Getting Started
 
