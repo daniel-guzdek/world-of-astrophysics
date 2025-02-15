@@ -66,7 +66,7 @@ Clone the repository:
 git clone https://github.com/your-username/world-of-astrophysics.git
 cd world-of-astrophysics
 
-### `npm install`
+### `npm install --legacy-peer-deps`
 
 To install node packages.
 
