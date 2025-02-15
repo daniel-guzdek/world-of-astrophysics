@@ -25,10 +25,7 @@
     z-index: -1;
   }
   .hero-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     width: 80%;
     .hero-title {
       color: $secondary-font-color;
