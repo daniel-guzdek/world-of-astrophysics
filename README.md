@@ -1,14 +1,12 @@
 # World of Astrophysics Application
 
-Welcome to the Astrophysics Single Page Application, your gateway to exploring the wonders of the universe! This application provides a wealth of information on celestial bodies, distance calculations, and fascinating astrophysical phenomena.
+This Single Page Application provides a lot of informations on celestial bodies and fascinating astrophysical phenomena.
 
 ## Table of Contents
 
 Features
 
 Demo
-
-Setup
 
 Getting Started
 
@@ -40,13 +38,6 @@ Real-Time Data: Integration of real-time astronomical data.
 Demo
 Live Demo
 
-## Setup
-
-After running the application locally, you need to add the appropriate values ​​in the .env file to be able to fetch images in Gallery.
-
-1. Copy `.env.example` content to `.env`
-2. Add your own API keys and URLs
-
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -55,7 +46,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 Make sure you have the following installed on your system:
 
-Node.js (version 14.x or higher)
+Node.js (version 18.x or higher)
 
 npm
 
