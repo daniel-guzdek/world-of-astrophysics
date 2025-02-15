@@ -12,8 +12,8 @@ import Footer from "../../components/Footer/Footer";
 import Button from "../../components/common/Button/Button";
 
 const Gallery = () => {
-  const API_URL = process.env.REACT_APP_API_URL || API_URL_IMAGES;
-  const API_KEY = process.env.REACT_APP_PIXABAY_KEY || CONFIG.PIXABAY_KEY;
+  const API_URL = API_URL_IMAGES;
+  const API_KEY = CONFIG.PIXABAY_KEY;
 
   const [inputData, setInputData] = useState({
     searchTerm: { value: "", error: "" },
