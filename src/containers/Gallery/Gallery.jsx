@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import Preloader from "../../components/Preloader/Preloader";
 import Select from "../../components/Select/Select";
-import HttpService from "../../services/network/http/http";
 import { searchTerms } from "../../data/searchTerms";
 import { API_URL_IMAGES } from "../../api/url";
 import CONFIG from "../../config/config";
@@ -13,7 +12,6 @@ import Footer from "../../components/Footer/Footer";
 import Button from "../../components/common/Button/Button";
 
 const Gallery = () => {
-  const isLocal = process.env.NODE_ENV === "development";
   const API_URL = process.env.REACT_APP_API_URL || API_URL_IMAGES;
   const API_KEY = process.env.REACT_APP_PIXABAY_KEY || CONFIG.PIXABAY_KEY;
 
@@ -59,30 +57,12 @@ const Gallery = () => {
 
     try {
       let res;
-      if (isLocal) {
-        const httpService = new HttpService(inputData.apiURL);
-        res = await httpService.get(apiURL);
-      } else {
-        res = await axios.get(apiURL);
+      res = await axios.get(apiURL);
+      if (res.data.hits) {
+        setImages(res.data.hits);
       }
-
-      if (isLocal) {
-        if (res.hits) {
-          setImages(res.hits);
-        }
-
-        if (!res.hits.length) {
-          setError("No data");
-        }
-      }
-
-      if (!isLocal) {
-        if (res.data.hits) {
-          setImages(res.data.hits);
-        }
-        if (!res.data.hits.length) {
-          setError("No data");
-        }
+      if (!res.data.hits.length) {
+        setError("No data");
       }
     } catch (err) {
       console.error(err);
