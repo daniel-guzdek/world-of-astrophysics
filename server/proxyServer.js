@@ -1,10 +1,16 @@
 const express = require("express");
 const axios = require("axios");
-const cors = require("cors");
 const { PIXABAY_KEY } = require("../src/config/config");
 const app = express();
 
-app.use(cors());
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
 
 app.get("/proxy", async (req, res) => {
   const { q, image_type } = req.query;
