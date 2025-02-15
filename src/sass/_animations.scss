@@ -8,10 +8,11 @@
 }
 
 @keyframes preload-loading-dots {
-  0% {}
+  0% {
+  }
 
   to {
-   right: -100%;
+    right: -100%;
   }
 }
 

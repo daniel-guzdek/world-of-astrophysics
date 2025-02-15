@@ -1,38 +1,105 @@
-$primaryFontFamily: 'Orbitron', sans-serif;
-$secondaryFontFamily: 'Open Sans', sans-serif;
-// $thirdFontFamily: 'Quicksand', sans-serif;
-$primaryFontColor: cornflowerblue;
-$secondaryFontColor: rgb(58, 204, 204);
-$thirdFontColor: rgb(74, 11, 133);
+// Primary colors
+$primary-color: rgb(59, 89, 145);
+$primary-light-color: #ffffff;
+$primary-grey-color: #f4f4f4;
+$primary-dark-color: #192c3f;
+$primary-font-color: rgb(66, 66, 66);
 
-// titles 
-$titleMarginTop: 25px;
-$titleMarginBottom: 15px;
-$titleFontSize: 40px;
-$titleFontColor: rgb(66, 66, 66);
+// Secondary colors
+$secondary-color: #ffffff;
+$secondary-grey-color: #e0e0e0;
+$secondary-dark-color: #000000;
+$secondary-font-color: #ffffff;
 
-// subtitles
-$subtitleMarginTop: 10px;
-$subtitleMarginBottom: 20px;
-$subtitleFontSize: 25px;
-$subtitleFontColor: rgb(66, 66, 66);
+// Error colors
+$error-color: #dc3545;
+$error-dark-color: #a71d2a;
+$error-font-color: #dc3545;
 
-// paragraphs
-$paragraphFontSize: 15px;
-$paragraphFontColor: rgb(66, 66, 66);
-$paragraphFontFamily: $secondaryFontFamily;
+// Success colors
+$success-color: #d4edda;
+$success-dark-color: #155724;
+$success-font-color: #1e7e34;
 
-// section spacing
-$sectionSpaceTop: 50px;
-$sectionSpaceBottom: 50px;
-$sectionSideSpace: 20px;
+// Warining colors
+$warning-color: #ff843d;
+$warning-dark-color: rgb(179, 117, 2);
+$warning-font-color: rgb(179, 117, 2);
 
-// images
-$imageSpaceTop: 40px;
-$imageSpaceBottom: 40px;
+// Button colors
+$primary-button-color: #4a90e2;
+$primary-button-dark-color: #357abd;
 
-// media queries (max-width: 460px)
-$xsmallTitleFontSize: 30px;
-$xsmallSubtitleFontSize: 17px;
-$xsmallParagraphFontSize: 13px;
+// Background colors
+$background-light-color: #ffffff;
+$background-grey-color: #f4f4f4;
+$background-dark-color: #000000;
 
+// Font families
+$primary-font-family: "Inter", serif;
+
+// Font sizes
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-medium: 18px;
+$font-size-large: 26px;
+$font-size-xlarge: 42px;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 40px;
+
+// Container max-widths
+$container-max-width-xs: 320px;
+$container-max-width-sm: 540px;
+$container-max-width-md: 720px;
+$container-max-width-lg: 960px;
+$container-max-width-xl: 1140px;
+$container-max-width-xxl: 1440px;
+$container-max-width-full: 100%;
+
+// Media query breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Border radius
+$border-radius-sm: 2px;
+$border-radius-md: 4px;
+$border-radius-lg: 8px;
+
+// Border width
+$border-width-thin: 1px;
+$border-width-medium: 2px;
+$border-width-thick: 4px;
+
+// Border
+$border-thin-solid-light: 1px solid $background-grey-color;
+
+// Shadows
+$box-shadow-xs: 0 0 5px rgba(0, 0, 0, 0.1);
+$box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+$box-shadow-lg: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+// Burger
+$burger-menu-height: 60px;
+
+// Navbar
+$navbar-height: 80px;
+
+// Sub menu
+$side-menu-width: 400px;
+$side-menu-width-mobile: 100%;

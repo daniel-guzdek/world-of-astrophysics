@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# World of Astrophysics Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Astrophysics Single Page Application, your gateway to exploring the wonders of the universe! This application provides a wealth of information on celestial bodies, distance calculations, and fascinating astrophysical phenomena.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+Features
+
+Demo
+
+Getting Started
+
+Prerequisites
+
+Installation
+
+Running the App
+
+Running Tests
+
+Building the App
+
+Technologies Used
+
+Contributing
+
+License
+
+Features
+Celestial Body Information: Detailed information about stars, planets, and other celestial bodies.
+
+Distance Calculations: Calculate distances to celestial bodies using various astronomical data.
+
+Interactive Interface: User-friendly interface with engaging visuals and easy navigation.
+
+Real-Time Data: Integration of real-time astronomical data.
+
+Demo
+Live Demo
+
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Make sure you have the following installed on your system:
+
+Node.js (version 14.x or higher)
+
+npm
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/world-of-astrophysics.git
+cd world-of-astrophysics
+
+### `npm install`
+
+To install node packages.
+
+## Running the App
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Running Tests
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+## Building the App
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React: Front-end library for building user interfaces.
 
-### `npm run eject`
+React Router: Declarative routing for React applications.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Math.js: Extensive math library for JavaScript and Node.js.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Axios: Promise-based HTTP client for the browser and Node.js.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Jest: JavaScript testing framework.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+React Testing Library: JavaScript testing framework for React applications.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To contribute, follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Fork the repository.
 
-### Code Splitting
+Create a new branch (git checkout -b feature/your-feature-name).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Make your changes.
 
-### Analyzing the Bundle Size
+Commit your changes (git commit -m 'Add some feature').
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Push to the branch (git push origin feature/your-feature-name).
 
-### Making a Progressive Web App
+Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -1,0 +1,33 @@
+.calc-wrapper {
+  width: 50%;
+  max-width: 700px;
+  margin-top: 40px;
+  margin-right: 5%;
+  float: left;
+  padding: 30px;
+  background-color: $background-grey-color;
+  border-radius: $border-radius-md;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .select-group {
+    width: 100%;
+  }
+}
+
+.calc-results {
+  @include paragraph;
+  padding: 0 5px;
+}
+
+.calc-result {
+  font-weight: 700;
+  color: $primary-font-color;
+  margin: 0 6px;
+  @media (max-width: 768px) {
+    font-size: 19px;
+  }
+}

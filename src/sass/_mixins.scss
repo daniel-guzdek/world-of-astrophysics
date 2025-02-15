@@ -1,26 +1,144 @@
-@mixin main-title {
-  font-family: $secondaryFontFamily;
-  font-size: $titleFontSize;
-  color: $titleFontColor;
-  margin-top: $titleMarginTop;
-  margin-bottom: $titleMarginBottom;
-  text-align: center;
+@mixin justify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin main-subtitle {
-  font-family: $secondaryFontFamily;
-  font-size: $subtitleFontSize;
-  color: $subtitleFontColor;
-  margin-top: $subtitleMarginTop;
-  margin-bottom: $subtitleMarginBottom;
+@mixin wrapper {
+  margin: 0 auto;
+  min-width: 250px;
+  min-height: calc(100vh - 80px);
+}
+
+@mixin container {
+  @include wrapper;
+  @include justify;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  width: 80vw;
+}
+
+@mixin header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+@mixin content {
+  min-width: 250px;
+  @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    margin: 40px auto;
+  }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    margin: 20px auto;
+  }
+  @media (max-width: 460px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media (max-width: 320px) {
+    padding: 10px 5%;
+  }
+}
+
+@mixin title {
+  font-size: 42px;
+  font-family: $primary-font-family;
+  font-weight: $font-weight-normal;
+  color: $primary-color;
+  padding: 20px 0;
+  text-align: center;
+  @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    font-size: 56px;
+    padding-bottom: 40px;
+  }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    font-size: 50px;
+  }
+}
+
+@mixin subtitle {
+  display: block;
+  width: 100%;
+  font-family: $primary-font-family;
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  color: $primary-font-color;
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-lg;
+  text-align: center;
+  line-height: 140%;
+  @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    font-size: 35px;
+  }
+  @media (max-width: 460px) {
+    font-size: $font-size-medium;
+  }
+}
+
+@mixin info {
+  display: block;
+  margin: 0 auto;
+  font-family: $primary-font-family;
+  font-size: $font-size-large / 2;
+  width: 100%;
   text-align: center;
 }
 
 @mixin paragraph {
-  font-family: $secondaryFontFamily;
-  font-size: $paragraphFontSize;
-  color: $subtitleFontColor;
-  margin-top: $subtitleMarginTop;
-  margin-bottom: $subtitleMarginBottom;
+  font-family: $primary-font-family;
+  font-size: $font-size-base;
+  font-weight: $font-weight-light;
+  color: $primary-font-color;
+  padding-top: $spacing-md;
+  padding-bottom: $spacing-md;
   text-align: start;
+  line-height: 180%;
+  @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation: portrait) {
+    font-size: 25px;
+  }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    font-size: 24px;
+  }
+}
+
+@mixin description {
+}
+
+@mixin button {
+  display: block;
+  align-items: center;
+  padding: $spacing-sm $spacing-md;
+  margin: 0 $spacing-sm;
+  max-width: max-content;
+  background-color: $primary-button-color;
+  font-family: $primary-font-family;
+  font-size: $font-size-small;
+  color: $secondary-font-color;
+  border: 0;
+  border-radius: $border-radius-md;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.4s;
+  @media (max-width: 768px) {
+    max-width: none;
+    margin: 0;
+  }
+  @media (max-width: 460px) {
+    display: inline-flex;
+    justify-content: center;
+  }
+  &:hover {
+    background-color: $primary-button-dark-color;
+  }
 }

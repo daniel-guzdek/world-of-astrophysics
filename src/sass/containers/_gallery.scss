@@ -1,0 +1,20 @@
+.gallery-container {
+  @include container;
+  flex-direction: column;
+  @media (max-width: $container-max-width-md) {
+    width: auto;
+  }
+}
+
+.gallery-dropdown {
+  display: contents;
+}
+
+.gallery-controls {
+  display: flex;
+  position: relative;
+  gap: $spacing-md;
+  @media (max-width: $container-max-width-md) {
+    flex-direction: column;
+  }
+}

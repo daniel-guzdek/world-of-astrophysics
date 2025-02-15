@@ -1,0 +1,43 @@
+.calc-container {
+  @include container;
+  margin-top: 60px;
+  padding: 0;
+}
+
+.calc-panel {
+  margin-top: $spacing-xxl;
+  margin-bottom: $spacing-xxl;
+}
+
+.calc-math {
+  padding: 10px;
+}
+
+.calc-title,
+.section-title {
+  margin-top: $spacing-lg;
+  margin-bottom: $spacing-md;
+  color: $primary-font-color;
+  font-size: $font-size-large;
+  font-family: $primary-font-family;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+  @media (max-width: 768px) {
+    font-size: $font-size-medium;
+  }
+}
+
+.section-title:first-of-type {
+  margin-top: $spacing-lg;
+}
+
+.section-title:not(:first-of-type) {
+  margin-top: 80px;
+}
+
+.formula-explanation {
+  display: block;
+  margin: 0 auto;
+  max-width: fit-content;
+}

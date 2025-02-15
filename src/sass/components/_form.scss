@@ -1,0 +1,117 @@
+.form-container {
+  margin: 0 auto;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+  border-radius: $border-radius-md;
+  @media (max-width: 550px) {
+    width: fit-content;
+    padding: 5px;
+  }
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: $primary-font-color;
+}
+
+.form-input {
+  min-width: 460px;
+  padding: 8px 12px;
+  border: $border-thin-solid-light;
+  border-radius: $border-radius-md;
+  font-size: $font-size-small;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  &:hover {
+    box-shadow: $box-shadow-xs;
+  }
+  @media (max-width: $container-max-width-md) {
+    min-width: 320px;
+    padding: 7px 8px;
+  }
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: $primary-button-color;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.form-input-error {
+  border-color: $error-color;
+}
+
+.form-input-error:focus {
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.2);
+}
+
+.form-error {
+  max-width: 360px;
+  display: block;
+  margin-top: 4px;
+  color: $error-font-color;
+  font-size: 12px;
+}
+
+.form-error-submit {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: $primary-button-color;
+  color: $secondary-font-color;
+  border: none;
+  border-radius: $border-radius-md;
+  font-size: $font-size-small;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-button:hover:not(:disabled) {
+  background-color: $primary-button-dark-color;
+}
+
+.form-button:disabled {
+  background-color: $primary-grey-color;
+  cursor: not-allowed;
+}
+
+.form-button-submitting {
+  opacity: 0.7;
+}
+
+.form-success {
+  padding: 12px;
+  background-color: $success-color;
+  color: $success-dark-color;
+  border-radius: $border-radius-md;
+  text-align: center;
+  width: 100%;
+}
+
+textarea.form-input {
+  min-height: 100px;
+  resize: vertical;
+}

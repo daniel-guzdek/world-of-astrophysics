@@ -1,0 +1,27 @@
+.articles-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width: 1025px) {
+    margin-left: $side-menu-width;
+    width: calc(100% - $side-menu-width);
+  }
+  @media (max-width: 1024px) {
+    margin-top: $burger-menu-height;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1024px) {
+      margin-top: $burger-menu-height;
+    }
+  }
+}

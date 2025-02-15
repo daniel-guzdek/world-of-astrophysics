@@ -1,0 +1,102 @@
+.articles-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-grey-color;
+  box-shadow: 5px 4px 10px -6px $background-grey-color;
+  overflow: auto;
+  font-family: $primary-font-family;
+
+  @media (min-width: 1025px) {
+    position: fixed;
+    top: $navbar-height;
+    left: 0;
+    height: calc(100vh - 80px); // Navbar height: 80px
+    width: 360px;
+    z-index: 3;
+  }
+
+  @media (max-width: 1024px) {
+    &:not(.open) {
+      .burger + * {
+        display: none;
+      }
+    }
+
+    &.open {
+      position: fixed;
+      top: $navbar-height;
+      left: 0;
+      height: calc(100vh - $navbar-height);
+      z-index: 3;
+      max-height: calc(100vh - 80px);
+      overflow-y: scroll;
+    }
+  }
+
+  &.open {
+    background-color: $background-grey-color;
+    box-shadow: 5px 4px 10px -6px rgba(168, 162, 162, 0.76);
+    color: $primary-font-color;
+    max-height: calc(100vh - 80px);
+    overflow-y: scroll;
+  }
+
+  .burger {
+    position: fixed;
+    top: $navbar-height;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: $background-grey-color;
+    color: $primary-color;
+    z-index: 3;
+
+    @media (min-width: 1025px) {
+      display: none; // Hide burger menu on desktop
+    }
+
+    &.open {
+      position: relative;
+      top: 0;
+      border: none;
+      color: $primary-color;
+    }
+
+    .burger-title {
+      display: block;
+      flex-basis: 70%;
+      text-align: center;
+      margin-right: 15px;
+      margin-left: 25px;
+      font-size: $font-size-medium;
+      color: $primary-color;
+
+      @media (max-width: 375px) {
+        font-size: $font-size-base;
+      }
+
+      &.open {
+        color: $primary-color;
+      }
+    }
+
+    .burger-icon {
+      display: flex;
+      text-align: center;
+      font-size: 27px;
+      cursor: pointer;
+
+      @media (max-width: 575.98px) {
+        font-size: 25px;
+      }
+
+      &.open {
+        color: $primary-color;
+      }
+    }
+  }
+}

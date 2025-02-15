@@ -1,0 +1,17 @@
+.wrapper {
+  @include wrapper;
+  .container {
+    @include container;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    .container {
+      width: auto;
+    }
+  }
+}

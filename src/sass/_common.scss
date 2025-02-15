@@ -1,0 +1,61 @@
+* {
+  font-family: $primary-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-normal;
+}
+
+p {
+  @include paragraph;
+}
+
+strong {
+  margin: 0 5px;
+}
+
+.wrapper {
+  @include wrapper;
+}
+
+.container {
+  @include container;
+}
+
+.content {
+  @include content;
+}
+
+.header {
+  @include header;
+}
+
+.title {
+  @include title;
+}
+
+.subtitle {
+  @include subtitle;
+}
+
+.info {
+  @include info;
+}
+
+.description {
+  @include description;
+}
+
+.button {
+  @include button;
+}
+
+.MathJax {
+  position: initial !important;
+  margin: 0 5px;
+}
