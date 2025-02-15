@@ -3,6 +3,7 @@ import { calcCardsHeaderData, calculatorsHeaderData } from "../../data/headers";
 import CalcCard from "../../components/CalcCard/CalcCard";
 import Footer from "../../components/Footer/Footer";
 import ReactPlayer from "react-player";
+import video1920 from "../../videos/Asteroid_1920px.mp4";
 
 const Calculators = () => {
   const renderCalcCards = calcCardsHeaderData?.map((card, index) => {
@@ -20,7 +21,7 @@ const Calculators = () => {
     <>
       <div className="calculators-wrapper">
         <ReactPlayer
-          url="../videos/Asteroid_1920px.mp4"
+          url={video1920}
           playing
           loop
           muted

@@ -1,3 +1,4 @@
+import React from "react";
 import { WiMoonAltWaxingCrescent2 } from "react-icons/wi";
 import { GiAtom } from "react-icons/gi";
 import { SiElectron } from "react-icons/si";

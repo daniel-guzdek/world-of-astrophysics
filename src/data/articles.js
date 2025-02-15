@@ -1,4 +1,7 @@
+import React from "react";
 import ArticleContentId0 from "../components/Article/Content/ArticleContentId0";
+import andromedaImg from "../images/andromeda_640px.jpg";
+import blackHoleImg from "../images/black-hole_640px.jpg";
 import { setIcon } from "../utils/common";
 
 export const data = [
@@ -21,7 +24,7 @@ export const data = [
     subtitle:
       "Andromeda (the Milky Way's closest galaxy) is getting closer. In about 5 billion years, there will be a collision with our Milky Way.",
     icon: setIcon("astrophysics"),
-    images: ["../images/andromeda_640px.jpg"],
+    images: [andromedaImg],
     content: <ArticleContentId0 />,
   },
   {
@@ -53,7 +56,7 @@ export const data = [
     subtitle:
       "Black holes and their nature. Will there be a solution to the puzzle of black hole pairing?",
     icon: setIcon("astrophysics"),
-    images: ["../images/black-hole_640px.jpg"],
+    images: [blackHoleImg],
     content: <ArticleContentId0 />,
   },
   {

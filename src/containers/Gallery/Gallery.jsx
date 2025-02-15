@@ -65,11 +65,24 @@ const Gallery = () => {
       } else {
         res = await axios.get(apiURL);
       }
-      if (res.hits) {
-        setImages(res.hits);
+
+      if (isLocal) {
+        if (res.hits) {
+          setImages(res.hits);
+        }
+
+        if (!res.hits.length) {
+          setError("No data");
+        }
       }
-      if (!res.hits.length) {
-        setError("No data");
+
+      if (!isLocal) {
+        if (res.data.hits) {
+          setImages(res.data.hits);
+        }
+        if (!res.data.hits.length) {
+          setError("No data");
+        }
       }
     } catch (err) {
       console.error(err);
