@@ -426,31 +426,6 @@ strong {
 }
 
 .calculators-wrapper .calculators-container {
-  margin: 0 auto;
-  min-width: 250px;
-  min-height: calc(100vh - 80px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 30px;
-  width: 80vw;
   padding: 0;
   position: absolute;
   top: 0;
@@ -984,7 +959,6 @@ strong {
   position: sticky;
   top: 0;
   width: 100%;
-  max-width: 1900px;
   height: 80px;
   margin: 0 auto;
   -webkit-box-align: center;
