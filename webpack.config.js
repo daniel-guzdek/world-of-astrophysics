@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
     mode: isProduction ? "production" : "development",
     entry: "./src/index.js",
     output: {
-      path: path.resolve(__dirname, "dist"),
+      path: path.resolve(__dirname, "build"),
       filename: isProduction ? "bundle.[contenthash].js" : "bundle.js",
       publicPath: "/",
     },
