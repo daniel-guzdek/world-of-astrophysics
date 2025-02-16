@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "../../components/Preloader/Preloader";
 import Lightbox from "../../components/LightBox/Lightbox";
 
 const Images = ({ images }) => {
@@ -35,11 +34,6 @@ const Images = ({ images }) => {
               className="images-grid-item"
               onClick={() => openLightbox(index)}
             >
-              {!loadedImages[img.id] && (
-                <div className="images-loader">
-                  <Preloader />
-                </div>
-              )}
               <div className="image-wrapper">
                 <img
                   className={`image-photo ${

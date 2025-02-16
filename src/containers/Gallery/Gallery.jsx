@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Preloader from "../../components/Preloader/Preloader";
 import Select from "../../components/Select/Select";
 import { searchTerms } from "../../data/searchTerms";
 import { API_URL_IMAGES } from "../../api/url";
@@ -104,7 +103,6 @@ const Gallery = () => {
               disabled={isLoading}
             />
           </div>
-          {isLoading && <Preloader />}
           {error && <div className="error-message">{error}</div>}
           {!isLoading && !error && images.length > 0 && (
             <Images images={images} />
