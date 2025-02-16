@@ -954,6 +954,36 @@ strong {
   padding: 0.5rem;
 }
 
+.loader {
+  width: 50px;
+  padding: 8px;
+  margin: 71px auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #424242;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  -webkit-animation: l3 1s infinite linear;
+          animation: l3 1s infinite linear;
+}
+
+@-webkit-keyframes l3 {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes l3 {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
